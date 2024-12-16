@@ -9,7 +9,7 @@ import Loader from '@/components/Loader';
 
 interface MeetingProps {
   params: {
-    id: any
+    id: string
   };
 }
 
