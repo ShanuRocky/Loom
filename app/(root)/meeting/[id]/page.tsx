@@ -7,10 +7,16 @@ import React, { useState } from 'react'
 import { useGetCallById } from '@/hooks/useGetCallById';
 import Loader from '@/components/Loader';
 
-const Meeting = ({params}: { params: { id: string }}) => {
+interface MeetingProps {
+  params: {
+    id: string;
+  };
+}
+
+const Meeting: React.FC<MeetingProps> = ({params}) => {
   const {isLoaded} = useUser();
   const [isSetUpComplete,setIsSetUpComplete] = useState(false);
-  const {call , isCallLoading} = useGetCallById(params.id);
+  const {call , isCallLoading} = useGetCallById(params?.id);
    if(!isLoaded || isCallLoading) return <Loader />
   return (
     <main className='h-screen  w-full'>
