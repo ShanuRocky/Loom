@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import MeetingTypeList from '@/components/MeetingTypeList'
-import { useCall } from '@stream-io/video-react-sdk'
 
 
 const Home = () => {

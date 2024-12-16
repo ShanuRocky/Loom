@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import {
-  CallControls,
   CallingState,
   CallParticipantsList,
   CallStatsButton,
@@ -12,7 +11,6 @@ import {
   SpeakingWhileMutedNotification,
   ToggleAudioPublishingButton,
   ToggleVideoPublishingButton,
-  useCall,
   useCallStateHooks,
 } from "@stream-io/video-react-sdk";
 import React, { useState } from "react";
@@ -20,21 +18,19 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Camera, LayoutList, Users } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { LayoutList, Users } from "lucide-react";
+import { useRouter } from "next/navigation";
 import EndCallButton from "./EndCallButton";
 import Loader from "./Loader";
 
 type callLayoutType = "grid" | "speaker-left" | "speaker-right";
 
 const MeetingRoom = () => {
-  const searchParams = useSearchParams();
+  const router = useRouter();
   const [layout, setLayout] = useState<callLayoutType>("speaker-left");
-  const isPersonalRoom = !!searchParams.get("personal");
   const [showParticipent, setShowParticipent] = useState(false);
 
   const { useCallCallingState } = useCallStateHooks();
@@ -51,11 +47,7 @@ const MeetingRoom = () => {
     }
   };
 
-  const router = useRouter();
-  const call = useCall();
   const onLeave = () => {
-    call?.camera.disable();
-    call?.microphone.disable();
     router.push("/");
   };
 
@@ -78,7 +70,6 @@ const MeetingRoom = () => {
           />
         </div>
         <div className="fixed bottom-2 flex w-full items-center justify-center gap-5 flex-wrap">
-          {/* <CallControls /> */}
           <div className="str-video__call-controls">
             <SpeakingWhileMutedNotification>
               <ToggleAudioPublishingButton />

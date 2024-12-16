@@ -1,7 +1,6 @@
 'use client'
 import { useUser } from '@clerk/nextjs'
 import React from 'react'
-import Meeting from '../../meeting/[id]/page'
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/hooks/use-toast'
 import { useGetCallById } from '@/hooks/useGetCallById'
