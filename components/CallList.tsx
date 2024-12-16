@@ -56,17 +56,16 @@ const CallList = ({ type }: { type: 'previous' | 'upcoming' | 'recordings' }) =>
                         icon={
                             type == 'previous' ? '/icons/previous.svg' : type === 'recordings' ? '/icons/recordings.svg' : '/icons/upcoming.svg'
                         }
-                        title={(meeting as Call).state?.custom?.description?.substring(0, 20) || meeting?.filename?.substring(0,20) ||'Personal Meeting'}
-                        date={(meeting as Call).state?.startsAt
-                            ? new Date((meeting as Call)?.state?.startsAt).toLocaleString()
-                            : (meeting as CallRecording)?.start_time
-                                ? new Date((meeting as CallRecording).start_time).toLocaleString()
-                                : 'No date available'}
+                        title={(meeting as Call).state?.custom?.description?.substring(0, 20) || (meeting as CallRecording).filename?.substring(0,20) ||'Personal Meeting'}
+                        date={
+                            (meeting as Call).state?.startsAt?.toLocaleString() ||
+                            (meeting as CallRecording).start_time?.toLocaleString()
+                          }
                         isPreviousMeeting={type === 'previous'}
                         buttonIcon1={type === 'recordings' ? '/icons/play.svg' : undefined}
                         buttonText={type === 'recordings' ? 'Play' : 'Start'}
-                        handleClick={type === 'recordings' ? () => router.push(`${meeting.url}`) : () => router.push(`/meeting/${meeting?.id}`)}
-                        link={type === 'recordings' ? (meeting)?.url : `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meeting?.id}`}
+                        handleClick={type === 'recordings' ? () => router.push(`${(meeting as CallRecording).url}`) : () => router.push(`/meeting/${(meeting as Call)?.id}`)}
+                        link={type === 'recordings' ? (meeting as CallRecording)?.url : `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${(meeting as Call)?.id}`}
                     />
                 )) :
                     (
