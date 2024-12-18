@@ -19,7 +19,7 @@ const HomeCard = ({className, img , title , description , handleClick} :
     )}
         onClick={handleClick}>
         <div className='flex-center glassmorphism size-12 rounded-[10px]'>
-          <Image src={img} width={27} height={27} alt='one' />
+          <Image src={img} width={27} height={27} alt='one' loading='eager' />
         </div>
         <div className='flex flex-col gap-2'>
           <h1 className='font-bold text-2xl'>{title}</h1>

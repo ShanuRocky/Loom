@@ -32,7 +32,8 @@ const MeetingModal = ({ isOpen, onClose, title, className, children, handleClick
                         image && 
                         (
                             <div className='flex justify-center'>
-                                <Image src={image} alt='image' width={72} height={72}/>
+                                <Image src={image} alt='image' width={72} height={72} loading='eager'
+                                />
                             </div>
                         )
                     }
@@ -42,7 +43,7 @@ const MeetingModal = ({ isOpen, onClose, title, className, children, handleClick
                             onClick={handleClick}>
                         {
                             buttonIcon && (
-                                <Image  src={buttonIcon} alt='button icon' width={13} height={13}/>
+                                <Image  src={buttonIcon} alt='button icon' width={13} height={13} loading='eager'/>
                             )
                         }&nbsp;
                         {buttonText || 'schedule-meeting'} 

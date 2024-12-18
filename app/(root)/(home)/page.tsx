@@ -12,6 +12,7 @@ const Home = () => {
           layout="fill"
           objectFit="cover"
           className="z-0"
+          loading='eager'
         ></Image>
         <div className="absolute top-0 left-0 w-full h-full">
           <h2 className="text-white text-[2.5vh] px-[1vh] font-thin m-[3vh] w-fit h-fit sm:text-[3.5vh] sm:m-[4vh] bg-[#FFFFFF0D]">

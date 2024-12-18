@@ -9,6 +9,7 @@ const Loader = () => {
            alt='loading'
            width={50}
            height={50}
+           loading='eager'
        />
     </div>
   )

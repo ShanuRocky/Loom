@@ -21,12 +21,12 @@ const MobileNav = () => {
             <Sheet>
                 <SheetTrigger asChild >
                     <Image src='/icons/hamburger.svg' width={36} height={36} alt='hamberger icon'
-                        className='cursor-pointer sm:hidden w-fit'>
+                        className='cursor-pointer sm:hidden w-fit' loading='eager'>
                     </Image>
                 </SheetTrigger>
                 <SheetContent side="left" className='border-none bg-dark-1 w-fit'>
                     <Link href="/" className='flex items-center gap-1 w-fit'>
-                        <Image src="/icons/logo.svg" width={32} height={32} alt='YOOM LOGO' className='max-sm:size-10' />
+                        <Image src="/icons/logo.svg" width={32} height={32} alt='YOOM LOGO' className='max-sm:size-10' loading='eager' />
                         <p className='text-[26px] font-extrabold text-white '>YOOM</p>
                     </Link>
 
@@ -46,7 +46,7 @@ const MobileNav = () => {
                                                 className={cn('flex gap-4 items-center p-4 rounded-lg justify-start ',
                                                     { 'bg-blue-1': isActive, })}
                                             >
-                                                <Image src={link.imgUrl} alt={link.label} width={24} height={24} />
+                                                <Image src={link.imgUrl} alt={link.label} width={24} height={24} loading='eager' />
                                                 <p className="text-lg font-semibold ">
                                                     {link.label}
                                                 </p>
