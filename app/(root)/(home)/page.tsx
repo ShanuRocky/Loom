@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section className='flex flex-col size-full gap-10 text-white'>
       <section className='relative w-full h-[25vh] sm:h-[35vh]'>
-        <Image src="/images/hero-background.png"
+        <Image src="/images/hero-background.webp"
           alt="background"
           layout="fill"
           objectFit="cover"

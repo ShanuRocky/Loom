@@ -30,6 +30,19 @@ Loom is a fully-featured video conferencing web application that replicates core
 5. **Personal Meeting Page**: Dedicated section for personal rooms.
 
 ---
+## 📸 Screenshots
+
+### HomePage 
+<img width="1468" alt="Screenshot 2024-12-18 at 2 56 04 PM" src="https://github.com/user-attachments/assets/fd15fd20-7fd2-4263-9a81-f4604bbe06d8" />
+
+### MeetingRoom
+<img width="1470" alt="Screenshot 2024-12-18 at 5 45 07 PM" src="https://github.com/user-attachments/assets/01e4fb9c-0d63-497f-a29c-7d0b57b6429e" />
+
+### RecordingsPage
+<img width="1463" alt="Screenshot 2024-12-18 at 3 14 42 PM" src="https://github.com/user-attachments/assets/887e31ac-2bad-4295-b5ee-f648219173b5" />
+
+### Mobile View
+<img width="489" alt="Screenshot 2024-12-18 at 3 16 51 PM" src="https://github.com/user-attachments/assets/d6928885-bd2a-4112-b5ba-62f8fdfae07d" />
 
 ## 🛠️ Tech Stack
 
@@ -101,7 +114,6 @@ Visit the live version of the project: [Loom](https://loom-shanurockys-projects.
 - Next.js for its powerful web framework.
 - Radix UI for accessible components.
 - TailwindCSS for modern styling.
-
 
 
 
