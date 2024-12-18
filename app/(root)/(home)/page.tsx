@@ -4,6 +4,7 @@ import MeetingTypeList from '@/components/MeetingTypeList'
 
 
 const Home = () => {
+  5
   return (
     <section className='flex flex-col size-full gap-10 text-white'>
       <section className='relative w-full h-[25vh] sm:h-[35vh]'>
