@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import 'react-datepicker/dist/react-datepicker.css'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
   title: "YOOM",
   description: "Video Calling App",
@@ -36,6 +37,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           className='antialiased bg-dark-2'>
           {children}
           <SpeedInsights/>
+          <Analytics />
           <Toaster />
         </body>
       </ClerkProvider>
