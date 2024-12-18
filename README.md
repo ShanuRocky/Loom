@@ -73,15 +73,17 @@ Ensure you have the following installed:
    ```bash
    npm install
 
-4. Set up environment variables for Clerk and Stream: Create a .env.local file in the root directory. Add the following variables:
-        ```bash
-        NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
-        CLERK_SECRET_KEY=sk_test_YOUR_CLERK_SECRET_KEY
-        NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-        NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-        NEXT_PUBLIC_STREAM_API_KEY=YOUR_STREAM_API_KEY
-        STREAM_SECRET_KEY=YOUR_STREAM_SECRET_KEY
-        NEXT_PUBLIC_BASE_URL=https://localhost:3000
+4. Set up environment variables for Clerk and Stream:
+- Create a .env.local file in the root directory.
+- Add the following variables:
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
+CLERK_SECRET_KEY=sk_test_YOUR_CLERK_SECRET_KEY
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_STREAM_API_KEY=YOUR_STREAM_API_KEY
+STREAM_SECRET_KEY=YOUR_STREAM_SECRET_KEY
+NEXT_PUBLIC_BASE_URL=https://localhost:3000
 
 
 5. Start the development server:
