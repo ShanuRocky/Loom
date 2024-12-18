@@ -74,8 +74,8 @@ Ensure you have the following installed:
    npm install
 
 4. Set up environment variables for Clerk and Stream:
-   Create a .env.local file in the root directory.
-   Add the following variables:
+- Create a .env.local file in the root directory.
+- Add the following variables:
         ```bash
         NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
         CLERK_SECRET_KEY=sk_test_YOUR_CLERK_SECRET_KEY
