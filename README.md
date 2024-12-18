@@ -66,14 +66,17 @@ Ensure you have the following installed:
    git clone https://github.com/ShanuRocky/Loom.git
 
 2. Navigate to the project directory:
+   ```bash
    cd Loom
 
 3. Install dependencies:
+   ```bash
    npm install
 
 4. Set up environment variables for Clerk and Stream:
    Create a .env.local file in the root directory.
    Add the following variables:
+        ```bash
         NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YOUR_CLERK_PUBLISHABLE_KEY
         CLERK_SECRET_KEY=sk_test_YOUR_CLERK_SECRET_KEY
         NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
@@ -84,6 +87,7 @@ Ensure you have the following installed:
 
 
 5. Start the development server:
+   ```bash
    npm run dev
 
 ## Live Demo
