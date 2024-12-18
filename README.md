@@ -101,7 +101,6 @@ Visit the live version of the project: [Loom](https://loom-shanurockys-projects.
 - Next.js for its powerful web framework.
 - Radix UI for accessible components.
 - TailwindCSS for modern styling.
-- Special thanks to everyone contributing to open-source projects!
 
 
 
