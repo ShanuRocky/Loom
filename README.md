@@ -69,7 +69,6 @@ Follow these steps to set up Loom on your local machine.
 ### Prerequisites
 
 Ensure you have the following installed:
-- **Node.js** (v16+ recommended)
 - **npm** or **yarn**
 
 ### Installation
